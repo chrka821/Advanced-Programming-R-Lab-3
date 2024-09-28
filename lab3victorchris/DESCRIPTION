@@ -2,12 +2,10 @@ Package: lab3victorchris
 Type: Package
 Title: Implementation of Dijkstra and Euclidean Algorithm for a university assignment
 Version: 1.0
-Suggests: 
-    dplyr
 Date: 2024-09-27
 Author: Christian Kammerer, Victor Guillo
 Maintainer: Christian Kammerer <chrka821@studen.liu.se>
 Description: This package implements two functions
   1. Dijkstra computes the shortest path from a root node to every other node in a graph. 
   2. Euclidean algorithm computes the largest common divisor of two integers.
-License: GPL-3.0
+License: `use_mit_license()`
