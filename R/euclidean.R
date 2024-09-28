@@ -13,7 +13,7 @@
 #' @export
 
 euclidean <- function(x, y){
-  
+  stopifnot(is.numeric(x) & is.numeric(y))
   if (y > x){ # ensure t that the bigger value is stored in x
     temp <- x
     x <- y
@@ -26,6 +26,6 @@ euclidean <- function(x, y){
     x <- y 
     y <- remainder # X turns into y, y turns into the remainder
   }
-  return(x) # X holds the value of the last non zero remainder and thus is the largest divisor
+  return(abs(x)) # X holds the value of the last non zero remainder and thus is the largest divisor
 }
 

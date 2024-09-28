@@ -72,5 +72,6 @@ wiki_graph <- data.frame(
   w  = c(7, 9, 10, 15, 9, 11, 2, 15, 6, 6, 9, 14, 2, 9, 6)
 )
 
+
 # Test the function with initial node 1
 dijkstra(wiki_graph, 1)
