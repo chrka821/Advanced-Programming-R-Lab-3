@@ -3,7 +3,7 @@ dijkstra <- function(graph, init_node) {
   # Get unique nodes in the graph
   nodes <- unique(c(graph$v1, graph$v2))
   
-  # Initialize distances to infinity and set the distance to the initial node as 0
+  # Initialize distances to infinity and set distance to initial node as 0
   distances <- rep(Inf, length(nodes))
   names(distances) <- nodes
   distances[as.character(init_node)] <- 0
@@ -20,8 +20,8 @@ dijkstra <- function(graph, init_node) {
     # Remove it from the list of nodes to visit
     to_visit <- setdiff(to_visit, current_node)
     
-    # Get neighbors of the current node using base R subsetting
-    neighbors <- subset(graph, v1 == current_node, select = c(v2, w))
+    # Get neighbors of the current node using with()
+    neighbors <- with(graph, graph[v1 == current_node, c("v2", "w")])
     
     # Update the distances to the neighbors
     for (i in 1:nrow(neighbors)) {
@@ -38,6 +38,7 @@ dijkstra <- function(graph, init_node) {
   # Return the distances from the initial node to all other nodes
   return(distances)
 }
+
 
 # Example graph
 wiki_graph <- data.frame(
