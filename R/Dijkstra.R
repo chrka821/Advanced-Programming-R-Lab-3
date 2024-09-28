@@ -1,3 +1,28 @@
+#' Dijkstra Algorithm
+#'
+#' The Dijkstra algorithm computes the shortest path from a given initial node to every other node
+#' in a graph. It operates on graphs with weighted edges and non-negative weights, updating the shortest
+#' known distances to neighboring nodes as it iterates.
+#'
+#' @param graph A data frame containing the edges of the graph with three variables: \code{v1}, \code{v2}, and \code{w}.
+#'   \code{v1} is the start node, \code{v2} is the destination node, and \code{w} is the weight of the edge between them.
+#' @param init_node The starting node from which the shortest path to every other node is calculated.
+#' @return A named vector where the names are the nodes of the graph and the values are the shortest
+#'   distances from \code{init_node} to those nodes.
+#' @examples
+#' # Example graph with 6 nodes and weighted edges
+#' wiki_graph <- data.frame(
+#'   v1 = c(1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 6, 6, 6),
+#'   v2 = c(2, 3, 3, 4, 1, 4, 6, 2, 5, 6, 4, 6, 3, 5, 4),
+#'   w  = c(7, 9, 10, 15, 9, 11, 2, 15, 6, 6, 9, 14, 2, 9, 6)
+#' )
+#' 
+#' # Compute the shortest paths from node 1
+#' dijkstra(wiki_graph, 1)
+#' @export
+
+
+
 dijkstra <- function(graph, init_node) {
   
   # Get unique nodes in the graph
