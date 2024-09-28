@@ -1,3 +1,17 @@
+#' Euclidean Algorithm
+#'
+#' The euclidean algorithm determines the largest common divisor of two integers.
+#' It was derive by greek mathematician Euclid.
+#'
+#' @param x First integer
+#' @param y Second Integer
+#' @return numeric value
+#' @examples
+#' x <- 121
+#' y <- 11
+#' euclidean(x,y)
+#' @export
+
 euclidean <- function(x, y){
   
   if (y > x){ # ensure t that the bigger value is stored in x

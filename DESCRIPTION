@@ -8,4 +8,6 @@ Maintainer: Christian Kammerer <chrka821@studen.liu.se>
 Description: This package implements two functions
   1. Dijkstra computes the shortest path from a root node to every other node in a graph. 
   2. Euclidean algorithm computes the largest common divisor of two integers.
-License: `use_mit_license()`
+License: License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
