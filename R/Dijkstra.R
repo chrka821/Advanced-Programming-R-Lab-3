@@ -3,6 +3,7 @@
 #' The Dijkstra algorithm computes the shortest path from a given initial node to every other node
 #' in a graph. It operates on graphs with weighted edges and non-negative weights, updating the shortest
 #' known distances to neighboring nodes as it iterates.
+#' https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
 #'
 #' @param graph A data frame containing the edges of the graph with three variables: \code{v1}, \code{v2}, and \code{w}.
 #'   \code{v1} is the start node, \code{v2} is the destination node, and \code{w} is the weight of the edge between them.

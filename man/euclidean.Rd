@@ -17,6 +17,7 @@ numeric value
 \description{
 The euclidean algorithm determines the largest common divisor of two integers.
 It was derive by greek mathematician Euclid.
+https://en.wikipedia.org/wiki/Euclidean_algorithm
 }
 \examples{
 x <- 121

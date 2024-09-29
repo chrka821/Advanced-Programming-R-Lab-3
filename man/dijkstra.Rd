@@ -20,6 +20,7 @@ A named vector where the names are the nodes of the graph and the values are the
 The Dijkstra algorithm computes the shortest path from a given initial node to every other node
 in a graph. It operates on graphs with weighted edges and non-negative weights, updating the shortest
 known distances to neighboring nodes as it iterates.
+https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
 }
 \examples{
 # Example graph with 6 nodes and weighted edges
