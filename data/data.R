@@ -1,8 +1,7 @@
 #' Wikipedia Graph Example Dataset
 #'
 #' This dataset is a small example graph based on the Wikipedia page for 
-#' Dijkstra's algorithm. It is used to demonstrate how Dijkstra's algorithm
-#' works in practice with a graph containing nodes and weighted edges.
+#' Dijkstra's algorithm. 
 #'
 #' @format A data frame with 15 rows and 3 variables:
 #' \describe{
