@@ -11,6 +11,7 @@ Description: This package implements two functions
 License: GPL-3 + file LICENSE
 Encoding: UTF-8
 RoxygenNote: 7.3.2
+Requires: R >= 3.5.0
 Suggests: 
     testthat (>= 3.0.0),
     devtools
